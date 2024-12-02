@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.php">
+    <link rel="stylesheet" href="assets/bootstrap.min.css">
+    <title>Document</title>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg  fixed-top navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#"> <img src="image/logo.TheTruths.png" alt="logo" width="100" height="80"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="reservation.html">Réservations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav><!DOCTYPE html>
+        <html lang="fr">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Réservation Restaurant</title>
+            <!-- Inclusion de Bootstrap -->
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        </head>
+        <body>
+
+            <div class="container my-5">
+                <h2 class="text-center mb-4">Réservez une table</h2>
+
+                <!-- Formulaire de réservation avec Formspree -->
+                <form action="https://formspree.io/f/xgvepjwb" method="POST">
+                    <div class="row">
+                        <!-- Nom -->
+                        <div class="col-md-6 mb-3">
+                            <label for="name" class="form-label">Nom</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="col-md-6 mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <!-- Date -->
+                        <div class="col-md-6 mb-3">
+                            <label for="date" class="form-label">Date de la réservation</label>
+                            <input type="date" class="form-control" id="date" name="date" required>
+                        </div>
+
+                        <!-- Heure -->
+                        <div class="col-md-6 mb-3">
+                            <label for="time" class="form-label">Heure</label>
+                            <input type="time" class="form-control" id="time" name="time" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <!-- Nombre de personnes -->
+                        <div class="col-md-6 mb-3">
+                            <label for="people" class="form-label">Nombre de personnes</label>
+                            <input type="number" class="form-control" id="people" name="people" min="1" required>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label for="number" class="form-label">Numéro de téléphone</label>
+                            <input type="tel" class="form-control" id="phone" name="phone" pattern="[0-9]{10}" placeholder="0602030405" required>
+                        </div>
+                    </div>
+
+                    <!-- Bouton d'envoi -->
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary">Envoyer la réservation</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Inclusion des scripts de Bootstrap -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        </body>
+        </html>
+
+
+
+      
+
+
+
+        <div class="container my-5">
+            <!-- Titre de la section -->
+            <h4 class="text-center mb-4">Informations de Contact</h4>
+
+            <div class="row">
+                <!-- Horaires d'ouverture -->
+                <div class="col-md-4 mb-3">
+                    <div class="card p-3">
+                        <h5 class="card-title">Horaires d'ouverture</h5>
+                        <ul class="list-unstyled">
+                            <li>Mardi : 12h00 - 00h30</li>
+                             <li>Mercredi : 12h00 - 00h30</li>
+                             <li>Jeudi : 12h00 - 00h30</li>
+                            <li>Vendredi: 12h00 - 00h30</li>
+                            <li>Samedi:12h00 - 00h30</li>
+                            <li>Dimanche:12h00 - 00h30</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Téléphone -->
+                <div class="col-md-4 mb-3">
+                    <div class="card p-3">
+                        <h5 class="card-title">Contactez-nous</h5>
+                        <p><strong>Téléphone :</strong> <a href="tel:+33489989040" class="text-decoration-none">+ 33 4 89 98 90 40</a></p>
+                    </div>
+                </div>
+
+                <!-- Adresse postale -->
+                <div class="col-md-4 mb-3">
+                    <div class="card p-3">
+                        <h5 class="card-title">Adresse</h5>
+                        <a href="https://www.google.com/maps?q=1+Rue+Chateauneuf,+06000+Nice,+France" 
+                               target="_blank" class="text-decoration-none">
+                               1 Rue Châteauneuf, 06000 Nice, France
+                            </a>
+                        </p>
+                        <p>Vous pouvez cliquer sur l'adresse pour voir la carte sur Google Maps.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer mt-5 fixed-bottom bg-secondary"
+            <div class="container">
+                <div class="row">
+                    <!-- Lien de Réservation -->
+                    <div class="col-md-4 text-center mb-3 mb-md-0">
+                        <h5><a href="reservation.html" target="_blank" class="link-light link-underline-opacity-0">Réservez maintenant</a></h5>
+                    </div>
+
+                    <!-- Lien vers le formulaire "Contactez-nous" -->
+                    <div class="col-md-4 text-center mb-3 mb-md-0 ">
+                        <h5><a href="contactez-nous.html" class="link-light link-underline-opacity-0">Ecrivez-nous</a></h5>
+                    </div>
+
+                    <!-- Lien vers la page Instagram -->
+                    <div class="col-md-4 text-center mb-3 mb-md-0">
+                        <h5><a href="https://www.instagram.com/the_truths_chez_christiane?igsh=MWx2Y256azZvamNpMA==" target="_blank" class="link-light link-underline-opacity-0">Suivez-nous sur Instagram</a></h5>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="assets/bootstrap.bundle.min.js">
+           
+                document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                    anchor.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        document.querySelector(this.getAttribute('href')).scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    });
+                });
+           
+
+        </script>
+        </body>
+
+        </html>

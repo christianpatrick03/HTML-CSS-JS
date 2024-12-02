@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/bootstrap.min.css">
+    <title>Document</title>
+      <!-- code qui permet de mettre le text de a propos de nous dans des bulles  -->
+    <style>
+        .bubble {
+            border-radius: 50%; /* Rend l'élément circulaire */
+             background-color:#F0FFFF ;/* Couleur de fond claire */
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px auto; /* Centre la bulle et ajoute une marge */
+            text-align: center;
+            width: 100%; /* Assure que la bulle prend toute la largeur de la colonne */
+            max-width: 500px; /* Limite la taille maximale de la bulle */
+        }
+        .bubble p {
+            margin: 0;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+    </style>
+    
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg  fixed-top navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#"> <img src="image/logo.TheTruths.png" alt="logo" width="100" height="80"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="menu.html"">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="reservation.html">Réservations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+     <!-- creation des image de fond qui defile automatiquement avec un temps de passage en utilisant data-bs-interval -->
+    <div class="container-lg">
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="2000">
+          <img src="image/imageResto2.jpg" class="d-block w-100" alt="image du restaurent">
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="image/image-resto1.jpg" class="d-block w-100" alt="image du restaurent">
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="image/imageResto3.jpg" class="d-block w-100" alt="image du restaurent">
+        </div>
+      </div>
+    </div>
+    </div>
+
+     <!-- section service responsive avec des carte -->
+    <div id="services" class="container my-5">
+        <h2 class="text-center mb-4">Nos Services</h2>
+        <div class="row g-4">
+            <!-- Carte 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="image/image-poulet.jpg" class="card-img-top" alt="Service 1" height="430">
+                    <div class="card-body">
+                        <h5 class="card-title">Service traiteur pour événements spéciaux</h5>
+                        <p class="card-text">aites de vos événements spéciaux des moments inoubliables avec notre service traiteur de qualité.</p>
+                        <a href="#" class="btn btn-primary"> Reserver une table </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Carte 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="image/image-gombo.jpg" class="card-img-top" alt="Service 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Cuisine traditionnelle camerounaise</h5>
+                        <p class="card-text">Découvrez la richesse de la cuisine camerounaise avec nos plats traditionnels et authentiques.</p>
+                        <a href="#" class="btn btn-primary">Reserver une table</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Carte 3 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="image/image-soya.jpg" class="card-img-top" alt="Service 3"height="430">
+                    <div class="card-body">
+                        <h5 class="card-title">Plats variés d'autres pays d'Afrique</h5>
+                        <p class="card-text">Voyagez à travers l'Afrique avec nos plats variés, une expérience gustative unique à Nice</p>
+                        <a href="#" class="btn btn-primary">Reserver une table</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <div  class="rounded-5 bg-primary>
+       
+   </div>
+       <div class="container my-5">
+           <h2 class="text-center mb-4">À propos de nous</h2>
+           <div class="row g-4 justify-content-around">
+               <!-- Premier paragraphe dans une bulle -->
+               <div class="col-md-4 col-sm-12 bg-primaire-subtil">
+                   <div class="bubble">
+                       <h4> Notre histoire</h4>
+                       <p>Notre mission est de fournir des services de la plus haute qualité, en mettant l'accent sur l'excellence et la satisfaction client. Nous croyons en l'importance de créer des expériences uniques qui répondent aux besoins et aux attentes de chacun.</p>
+                   </div>
+               </div>
+               <!-- Deuxième paragraphe dans une bulle -->
+               <div class="col-md-4 col-sm-12 bg-primaire-subtil">
+                   <div class="bubble">
+                        <h4> Mon histoire</h4>
+                       <p>Nos valeurs sont centrées sur l'intégrité, le respect et l'innovation. Nous nous engageons à agir de manière éthique, à respecter nos engagements et à faire preuve de créativité dans tout ce que nous faisons.</p>
+                   </div>
+               </div>
+           </div>
+               <!-- Troisième paragraphe dans une bulle -->
+               <div class="row g-4 bg-primaire-subtil">
+                   <div class="bubble">
+                       <p>Notre équipe est composée de professionnels passionnés, chacun apportant une expertise unique. Nous collaborons pour offrir les meilleures solutions et garantir un service exceptionnel à nos clients.</p>
+                   </div>
+               </div>
+           </div>
+       </div>
+
+    <div class="container my-5">
+        <!-- Titre de la section -->
+        <h4 class="text-center mb-4">Informations de Contact</h4>
+
+        <div class="row">
+            <!-- Horaires d'ouverture -->
+            <div class="col-md-4 mb-3">
+                <div class="card p-3">
+                    <h5 class="card-title">Horaires d'ouverture</h5>
+                    <ul class="list-unstyled">
+                        <li>Mardi : 12h00 - 00h30</li>
+                         <li>Mercredi : 12h00 - 00h30</li>
+                         <li>Jeudi : 12h00 - 00h30</li>
+                        <li>Vendredi: 12h00 - 00h30</li>
+                        <li>Samedi:12h00 - 00h30</li>
+                        <li>Dimanche:12h00 - 00h30</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Téléphone -->
+            <div class="col-md-4 mb-3">
+                <div class="card p-3">
+                    <h5 class="card-title">Contactez-nous</h5>
+                    <p><strong>Téléphone :</strong> <a href="tel:+33489989040" class="text-decoration-none">+ 33 4 89 98 90 40</a></p>
+                </div>
+            </div>
+
+            <!-- Adresse postale -->
+            <div class="col-md-4 mb-3">
+                <div class="card p-3">
+                    <h5 class="card-title">Adresse</h5>
+                    <a href="https://www.google.com/maps?q=1+Rue+Chateauneuf,+06000+Nice,+France" 
+                           target="_blank" class="text-decoration-none">
+                           1 Rue Châteauneuf, 06000 Nice, France
+                        </a>
+                    </p>
+                    <p>Vous pouvez cliquer sur l'adresse pour voir la carte sur Google Maps.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer mt-5 fixed-bottom bg-secondary"
+        <div class="container">
+            <div class="row">
+                <!-- Lien de Réservation -->
+                <div class="col-md-4 text-center mb-3 mb-md-0">
+                    <h5><a href="https://www.votre-site-de-reservation.com" target="_blank" class="link-light link-underline-opacity-0">Réservez maintenant</a></h5>
+                </div>
+
+                <!-- Lien vers le formulaire "Contactez-nous" -->
+                <div class="col-md-4 text-center mb-3 mb-md-0 ">
+                    <h5><a href="contactez-nous.html" class="link-light link-underline-opacity-0">Ecrivez-nous</a></h5>
+                </div>
+
+                <!-- Lien vers la page Instagram -->
+                <div class="col-md-4 text-center mb-3 mb-md-0">
+                    <h5><a href="https://www.instagram.com/votrecompte" target="_blank" class="link-light link-underline-opacity-0">Suivez-nous sur Instagram</a></h5>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
