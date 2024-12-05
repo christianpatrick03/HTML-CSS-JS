@@ -38,65 +38,29 @@
             </div>
         </nav>
 
-            <div class="container my-5">
-                <h2 class="text-center mb-4">Réservez une table</h2>
+        <div class="container my-5">
+            <h2 class="text-center mb-4">Contactez-nous</h2>
 
-                <!-- Formulaire de réservation avec Formspree -->
-                <form action="https://formspree.io/f/xgvepjwb" method="POST">
-                    <div class="row">
-                        <!-- Nom -->
-                        <div class="col-md-6 mb-3">
-                            <label for="name" class="form-label">Nom</label>
-                            <input type="text" class="form-control" id="name" name="name" required>
-                        </div>
+            <!-- Formulaire de contact -->
+            <form action="" method="post" enctype="https://formspree.io/f/xldeawzy">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nom</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
 
-                        <!-- Email -->
-                        <div class="col-md-6 mb-3">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" name="email" required>
-                        </div>
-                    </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
 
-                    <div class="row">
-                        <!-- Date -->
-                        <div class="col-md-6 mb-3">
-                            <label for="date" class="form-label">Date de la réservation</label>
-                            <input type="date" class="form-control" id="date" name="date" required>
-                        </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                </div>
 
-                        <!-- Heure -->
-                        <div class="col-md-6 mb-3">
-                            <label for="time" class="form-label">Heure</label>
-                            <input type="time" class="form-control" id="time" name="time" required>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <!-- Nombre de personnes -->
-                        <div class="col-md-6 mb-3">
-                            <label for="people" class="form-label">Nombre de personnes</label>
-                            <input type="number" class="form-control" id="people" name="people" min="1" required>
-                        </div>
-
-                        <div class="col-md-6 mb-3">
-                            <label for="number" class="form-label">Numéro de téléphone</label>
-                            <input type="tel" class="form-control" id="phone" name="phone" pattern="[0-9]{10}" placeholder="0602030405" required>
-                        </div>
-                    </div>
-
-                    <!-- Bouton d'envoi -->
-                    <div class="text-center">
-                        <button type="submit" class="btn btn-primary">Envoyer la réservation</button>
-                    </div>
-                </form>
-            </div>
-
-            <!-- Inclusion des scripts de Bootstrap -->
-           
-
-
-
-      
+                <button type="submit" class="btn btn-primary">Envoyer</button>
+            </form>
+        </div>
 
 
 
@@ -163,19 +127,7 @@
                 </div>
             </div>
         </footer>
-        <script src="assets/bootstrap.bundle.min.js">
-           
-                document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                    anchor.addEventListener('click', function(e) {
-                        e.preventDefault();
-                        document.querySelector(this.getAttribute('href')).scrollIntoView({
-                            behavior: 'smooth'
-                        });
-                    });
-                });
-           
+        <script src="assets/bootstrap.bundle.min.js"> </script>
+            </body>
 
-        </script>
-        </body>
-
-        </html>
+            </html>
