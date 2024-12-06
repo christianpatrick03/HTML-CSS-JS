@@ -4,15 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.php">
-    <link rel="stylesheet" href="assets/bootstrap.min.css">
     <!-- Lien vers Google Fonts -->
      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <link rel="stylesheet" href="assets/bootstrap.min.css">
+    <title>The Truths</title>
     <style>
         body {
           font-family: 'Roboto', sans-serif;
             </style>
+
     </head>
 
     <body>
@@ -44,78 +44,56 @@
             </div>
         </nav>
 
-            <div class="container my-5">
-                <h2 class="text-center mb-4 fst-italic">Réservez une table</h2>
-
-                <!-- Formulaire de réservation avec Formspree -->
-                <form action="https://formspree.io/f/xgvepjwb" method="POST">
-                    <div class="row">
-                        <!-- Nom -->
-                        <div class="col-md-6 mb-3">
-                            <label for="name" class="form-label font-monospace">Nom</label>
-                            <input type="text" class="form-control" id="name" name="name" required>
-                        </div>
-
-                        <!-- Email -->
-                        <div class="col-md-6 mb-3">
-                            <label for="email" class="form-label font-monospace">Email</label>
-                            <input type="email" class="form-control" id="email" name="email" required>
+        <!-- section service responsive avec des carte -->
+        <div id="services" class="container my-5">
+            <h2 class="text-center mb-4 fst-italic">Nos Services</h2>
+            <div class="row g-4">
+                <!-- Carte 1 -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="image/image-poulet.jpg" class="card-img-top" alt="Service 1" height="430">
+                        <div class="card-body">
+                            <h5 class="card-title">Service traiteur pour événements spéciaux</h5>
+                            <p class="card-text">aites de vos événements spéciaux des moments inoubliables avec notre service traiteur de qualité.</p>
+                            <a href="reservation.html" class="btn btn-outline-primary"> Reserver une table </a>
                         </div>
                     </div>
-
-                    <div class="row">
-                        <!-- Date -->
-                        <div class="col-md-6 mb-3">
-                            <label for="date" class="form-label font-monospace">Date de la réservation</label>
-                            <input type="date" class="form-control" id="date" name="date" required>
-                        </div>
-
-                        <!-- Heure -->
-                        <div class="col-md-6 mb-3">
-                            <label for="time" class="form-label font-monospace">Heure</label>
-                            <input type="time" class="form-control" id="time" name="time" required>
+                </div>
+                <!-- Carte 2 -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="image/image-gombo.jpg" class="card-img-top" alt="Service 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Cuisine traditionnelle camerounaise</h5>
+                            <p class="card-text">Découvrez la richesse de la cuisine camerounaise avec nos plats traditionnels et authentiques.</p>
+                            <a href="reservation.html" class="btn btn-outline-primary">Reserver une table</a>
                         </div>
                     </div>
-
-                    <div class="row">
-                        <!-- Nombre de personnes -->
-                        <div class="col-md-6 mb-3">
-                            <label for="people" class="form-label font-monospace">Nombre de personnes</label>
-                            <input type="number" class="form-control" id="people" name="people" min="1" required>
-                        </div>
-
-                        <div class="col-md-6 mb-3">
-                            <label for="number" class="form-label font-monospace">Numéro de téléphone</label>
-                            <input type="tel" class="form-control" id="phone" name="phone" pattern="[0-9]{10}" placeholder="0602030405" required>
+                </div>
+                <!-- Carte 3 -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="image/image-soya.jpg" class="card-img-top" alt="Service 3"height="430">
+                        <div class="card-body">
+                            <h5 class="card-title">Plats variés d'autres pays d'Afrique</h5>
+                            <p class="card-text">Voyagez à travers l'Afrique avec nos plats variés, une expérience gustative unique à Nice</p>
+                            <a href="reservation.html" class="btn btn-outline-primary">Reserver une table</a>
                         </div>
                     </div>
-
-                    <!-- Bouton d'envoi -->
-                    <div class="text-center">
-                        <button type="submit" class="btn btn-outline-primary">Envoyer la réservation</button>
-                    </div>
-                </form>
+                </div>
             </div>
-
-            <!-- Inclusion des scripts de Bootstrap -->
-           
-
-
-
-      
-
-
+        </div>
 
         <div class="container my-5 bg-secondary-subtle">
             <!-- Titre de la section -->
-            <h4 class="text-center mb-4">Informations de Contact</h4>
+            <h4 class="text-center mb-4 fst-italic">Informations de Contact</h4>
 
             <div class="row">
                 <!-- Horaires d'ouverture -->
                 <div class="col-md-4 mb-3">
                     <div class="card p-3">
                         <h5 class="card-title">Horaires d'ouverture</h5>
-                        <ul class="list-unstyled">
+                        <ul class="list-unstyled  font-monospace">
                             <li>Mardi : 12h00 - 00h30</li>
                              <li>Mercredi : 12h00 - 00h30</li>
                              <li>Jeudi : 12h00 - 00h30</li>
@@ -129,8 +107,8 @@
                 <!-- Téléphone -->
                 <div class="col-md-4 mb-3">
                     <div class="card p-3">
-                        <h5 class="card-title">Contactez-nous</h5>
-                        <p><strong>Téléphone :</strong> <a href="tel:+33489989040" class="text-decoration-none">+ 33 4 89 98 90 40</a></p>
+                        <h5 class="card-title ">Contactez-nous</h5>
+                        <p class=" font-monospace"><strong>Téléphone :</strong> <a href="tel:+33489989040" class="text-decoration-none  font-monospace">+ 33 4 89 98 90 40</a></p>
                     </div>
                 </div>
 
@@ -139,11 +117,11 @@
                     <div class="card p-3">
                         <h5 class="card-title">Adresse</h5>
                         <a href="https://www.google.com/maps?q=1+Rue+Chateauneuf,+06000+Nice,+France" 
-                               target="_blank" class="text-decoration-none">
+                               target="_blank" class="text-decoration-none  font-monospace">
                                1 Rue Châteauneuf, 06000 Nice, France
                             </a>
                         </p>
-                        <p>Vous pouvez cliquer sur l'adresse pour voir la carte sur Google Maps.</p>
+                        <p class=" font-monospace">Vous pouvez cliquer sur l'adresse pour voir la carte sur Google Maps.</p>
                     </div>
                 </div>
             </div>
@@ -164,24 +142,12 @@
 
                     <!-- Lien vers la page Instagram -->
                     <div class="col-md-4 text-center mb-3 mb-md-0">
-                        <h5><a href="https://www.instagram.com/the_truths_chez_christiane?igsh=MWx2Y256azZvamNpMA==" target="_blank" class="link-light link-underline-opacity-0">Suivez-nous sur Instagram</a></h5>
+                        <h5><a href="https://www.instagram.com/votrecompte" target="_blank" class="link-light link-underline-opacity-0">Suivez-nous sur Instagram</a></h5>
                     </div>
                 </div>
             </div>
         </footer>
-        <script src="assets/bootstrap.bundle.min.js">
-           
-                document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                    anchor.addEventListener('click', function(e) {
-                        e.preventDefault();
-                        document.querySelector(this.getAttribute('href')).scrollIntoView({
-                            behavior: 'smooth'
-                        });
-                    });
-                });
-           
-
-        </script>
+        <script src="assets/bootstrap.bundle.min.js"></script>
         </body>
 
         </html>
